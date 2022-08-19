@@ -1,3 +1,5 @@
+package model;
+
 import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
@@ -74,7 +76,7 @@ public class Client {
 
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your username for the chat: ");
+        System.out.println("Enter username: ");
         String username = scanner.nextLine();
         Socket socket = new Socket("localHost", 12344);
         Client client = new Client(socket, username);

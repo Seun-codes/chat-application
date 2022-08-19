@@ -1,3 +1,7 @@
+package model;
+
+import model.ClientHandler;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -23,14 +27,14 @@ public class Server {
 
         }
     }
-    public void closeServer(){
-        try{
-            if(serverSocket !=null){
-                serverSocket.close();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    public void closeServer(){
+//        try{
+//            if(serverSocket !=null){
+//                serverSocket.close();
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
 }
